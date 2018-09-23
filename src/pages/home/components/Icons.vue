@@ -1,6 +1,6 @@
 <template>
     <div class="icons">
-        <swiper>
+        <swiper :options="swiperOption">
             <swiper-slide v-for="(page, index) in pages" :key="index">
                 <div 
                     class="icon" 
@@ -21,38 +21,41 @@
         name : 'HomeIcon',
         data () {
             return {
+                swiperOption: {
+                   loop: false,
+                },
                 iconsList: [{
                         ids: '0001',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
-                        dec: '热门景点热门景点热门景点热门景点热门景点'
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
+                        dec: '景点门票'
                     },{
                         ids: '0002',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
-                        dec: '热门城市'
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
+                        dec: '北京必游'
                     },{
                         ids: '0003',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
                         dec: '自然风光'
                     },{
                         ids: '0004',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
-                        dec: '哈哈哈哈'
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
+                        dec: '文化古迹'
                     },{
                         ids: '0005',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
-                        dec: '哦哦哦哦'
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
+                        dec: '动植物园'
                     },{
                         ids: '0006',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
-                        dec: '极限冲浪'
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
+                        dec: '故宫'
                     },{
                         ids: '00007',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
-                        dec: '异域风情'
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
+                        dec: '一日游'
                     },{
                         ids: '00008',
-                        imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
-                        dec: '极限挑战'
+                        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
+                        dec: '泡温泉'
                     },{
                         ids: '00009',
                         imgUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2022630467,3755517063&fm=58',
