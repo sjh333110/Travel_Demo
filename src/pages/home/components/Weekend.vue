@@ -3,7 +3,7 @@
        <div class="title">周末去哪儿</div>
        <ul>
            <li class="item border-bottom" 
-           v-for="item in recommendList"
+           v-for="item in list"
            :key="item.id">
                <div class="item-img-wrapper">
                    <img class="item-img" :src="item.imgUrl" alt="">
@@ -19,34 +19,12 @@
 <script>
    export default {
        name: 'HomeWeekend',
+       props: {
+           list: Array
+       },
        data () {
            return {
-               recommendList: [
-                   {
-                       id: '12',
-                       imgUrl: 'http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg',
-                       title: '漂流勇进，烧烤露营',
-                       desc: '轻松水上漂，任我乐逍遥',
-                   },
-                    {
-                       id: '34',
-                       imgUrl: 'http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg',
-                       title: '漂流勇进，烧烤露营',
-                       desc: '轻松水上漂，任我乐逍遥',
-                   },
-                    {
-                       id: '45',
-                       imgUrl: 'http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg',
-                       title: '漂流勇进，烧烤露营',
-                       desc: '轻松水上漂，任我乐逍遥',
-                   },
-                    {
-                       id: '56',
-                       imgUrl: 'http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg',
-                       title: '漂流勇进，烧烤露营',
-                       desc: '轻松水上漂，任我乐逍遥',
-                    }
-               ]
+              
            }
        },
        methods: {
@@ -66,7 +44,7 @@
     .item-img-wrapper
         overflow : hidden
         height : 0
-        padding-bottom : 33.9%
+        padding-bottom : 57.09%
     // .item-img
     //     width ： 100%
     .item-info
