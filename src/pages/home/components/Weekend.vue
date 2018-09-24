@@ -44,7 +44,7 @@
     .item-img-wrapper
         overflow : hidden
         height : 0
-        padding-bottom : 57.09%
+        padding-bottom : 33.09%
     // .item-img
     //     width ： 100%
     .item-info
