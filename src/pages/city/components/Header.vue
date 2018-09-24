@@ -14,7 +14,7 @@
     }
 </script>
 <style lang="stylus" scoped>
-    @import '~styles/variables.styl';
+    @import '~styles/variables.styl'
     .header
         position : relative
         height : $headerHeight
