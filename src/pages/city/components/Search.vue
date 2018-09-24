@@ -5,7 +5,8 @@
         </div>
         <div class="search-content" v-show="keyWord" ref="search">
             <ul>
-                <li class="search-item border-bottom" v-for="item in list" :key="item.id">
+                <li class="search-item border-bottom" v-for="item in list" :key="item.id"
+                @click="handleCityClick(item.name)">
                     {{item.name}}
                 </li>
                 <li class="search-item border-bottom" v-show="hasNoDate">
@@ -29,6 +30,12 @@
                 keyWord: '',
                 list: [],
                 timer: null
+            }
+        },
+        methods: {
+             handleCityClick (city) {
+                this.$store.dispatch("cityChange", city);
+                this.$router.push('./');
             }
         },
         computed: {
